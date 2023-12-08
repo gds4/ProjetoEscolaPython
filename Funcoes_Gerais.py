@@ -14,6 +14,7 @@ def verificar_valor(valor):
     else:
         return False
 
+
 def verificar_sexo(string):
     if len(string) != 1:
         return False
@@ -22,6 +23,7 @@ def verificar_sexo(string):
         return False
 
     return True
+
 
 def ano_bissexto(ano):
    
@@ -75,6 +77,7 @@ def verificar_dataNasc(string):
             return False
 
     return True
+
 
 def digito_verificador(cpf):
 
@@ -135,6 +138,7 @@ def obter_dado_Nome(Pessoa):
     nome = str(input())
     return nome
 
+
 def obter_dado_Sexo(Pessoa):
     while True:
         print(f'\nInsira o sexo do {Pessoa} [M/F]: ', end = ' ')
@@ -156,6 +160,7 @@ def obter_dado_CPF(Pessoa):
         else:
             print('\nERRO: CPF Invalido, Tente novamente: ', end = ' ')
 
+
 def obter_dado_dataNasc(Pessoa):
     while True:
         print(f'\nInsira a Data de Nascimento do {Pessoa} [dd/mm/ano]: ', end = ' ')
@@ -165,6 +170,7 @@ def obter_dado_dataNasc(Pessoa):
             return dataNasc
         else:
             print('\nERRO: Data Invalida, Tente novamente: ', end = ' ')
+
 
 def obter_dado_Matricula(Pessoa):
     while True:

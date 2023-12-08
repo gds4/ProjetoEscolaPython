@@ -7,7 +7,6 @@ def menu_inicial():
     print('\nDigite a opcao desejada:', end= ' ')
 
 
-
 def menu_principal():
     print('\n_______Menu Principal_______')
 
@@ -31,7 +30,6 @@ def menu_aluno():
     print('\nDigite a opcao desejada:', end= ' ')
 
 
-
 def menu_professor():
     print('\n_______MENU PROFESSOR _______')
 
@@ -44,7 +42,6 @@ def menu_professor():
     print('\nDigite a opcao desejada:', end= ' ')
 
 
-
 def menu_disciplina():
     print('\n_______MENU DISCIPLINA_______')
 
@@ -55,6 +52,7 @@ def menu_disciplina():
     print('3- ATUALIZAR DISCIPLINA')
     print('4- EXCLUIR DISCIPLINA')
     print('\nDigite a opcao desejada:', end= ' ')
+
 
 def menu_cadastro():
     print('Selecione qual opcao deseja modificar')
