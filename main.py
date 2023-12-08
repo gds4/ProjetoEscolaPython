@@ -7,7 +7,7 @@ import Menu
 
 
 
-menu_inicial = None
+
 Menu.menu_inicial()
 
 while True:
@@ -41,10 +41,10 @@ while True:
                                 
                                 while True:
                                     Menu.menu_aluno()
-                                    opcao_aluno = str(input())
+                                    opcao_tmp = str(input())
                                     
-                                    if opcao_aluno.isdigit() is True:
-                                        opcao_menu_aluno = int(opcao_aluno)
+                                    if opcao_tmp.isdigit() is True:
+                                        opcao_menu_aluno = int(opcao_tmp)
                                         
                                         match opcao_menu_aluno:
                                             case 0:
@@ -63,7 +63,10 @@ while True:
                                                 al.Aluno.excluir_aluno()
                                                 
                                             case _:
-                                                FG.valor_invalido(opcao_tmp)
+                                                FG.valor_invalido(opcao_menu_aluno)
+                                                
+                                    else:
+                                        FG.valor_invalido(opcao_tmp)
                                         
                             case 2:
                                 Menu.menu_professor()
