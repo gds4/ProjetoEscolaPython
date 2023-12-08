@@ -181,3 +181,11 @@ def obter_dado_Matricula(Pessoa):
             return matricula
         else:
             print('\nERRO: Matricula invalida, Tente novamente: ', end = ' ')
+
+
+def formatar_cpf(cpf):
+    cpf_numerico = ''.join(filter(str.isdigit, cpf))
+
+    cpf_formatado = f'{cpf_numerico[:3]}.{cpf_numerico[3:6]}.{cpf_numerico[6:9]}-{cpf_numerico[9:]}'
+
+    return cpf_formatado

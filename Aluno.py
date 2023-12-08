@@ -57,7 +57,8 @@ class Aluno:
     def listar_alunos(cls):
         print('Matricula Nome                           Sexo CPF             Nasc      \n')
         for aluno in cls.alunos_cadastrados:
-            print(f'{aluno.Matricula.ljust(9)} {aluno.nome.ljust(30)} {aluno.sexo.ljust(4)} {aluno.CPF.ljust(15)} {aluno.Nasc.ljust(10)}')
+            cpf_formatado = FG.formatar_cpf(aluno.CPF)
+            print(f'{aluno.Matricula.ljust(9)} {aluno.nome.ljust(30)} {aluno.sexo.ljust(4)} {cpf_formatado.ljust(15)} {aluno.Nasc.ljust(10)}')
 
     @classmethod
     def atualizar_cadastro(cls):
