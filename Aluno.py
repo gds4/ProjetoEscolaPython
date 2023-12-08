@@ -53,13 +53,18 @@ class Aluno:
             print('\nMatricula nao encontrada!')
             print('Digite novamente: ', end = ' ')
 
+    
     @classmethod
     def listar_alunos(cls):
-        print('Matricula Nome                           Sexo CPF             Nasc      \n')
-        for aluno in cls.alunos_cadastrados:
-            cpf_formatado = FG.formatar_cpf(aluno.CPF)
-            print(f'{aluno.Matricula.ljust(9)} {aluno.nome.ljust(30)} {aluno.sexo.ljust(4)} {cpf_formatado.ljust(15)} {aluno.Nasc.ljust(10)}')
+        if cls.alunos_cadastrados:
+            print('Matricula Nome                           Sexo CPF             Nasc      \n')
+            for aluno in cls.alunos_cadastrados:
+                cpf_formatado = FG.formatar_cpf(aluno.CPF)
+                print(f'{aluno.Matricula.ljust(9)} {aluno.nome.ljust(30)} {aluno.sexo.ljust(4)} {cpf_formatado.ljust(15)} {aluno.Nasc.ljust(10)}')
+        else:
+            print('Nao ha aluno cadastrado no sistema')
 
+    
     @classmethod
     def atualizar_cadastro(cls):
         print('Digite o nome completo do aluno: ', end = ' ')

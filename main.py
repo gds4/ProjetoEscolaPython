@@ -8,13 +8,11 @@ import Menu
 
 
 menu_inicial = None
+Menu.menu_inicial()
 
 while True:
 
-    Menu.menu_inicial()
-
     opcao_tmp = input()
-
 
     if opcao_tmp.isdigit() is True:
 
@@ -26,9 +24,9 @@ while True:
                 sys.exit()
     
             case 1:
+                
                 while True:
                     Menu.menu_principal()
-    
                     opcao_tmp = input()
     
                     if opcao_tmp.isdigit() is True:
@@ -40,10 +38,9 @@ while True:
                                 break
     
                             case 1:
+                                
                                 while True:
-                                    
                                     Menu.menu_aluno()
-                                    
                                     opcao_aluno = str(input())
                                     
                                     if opcao_aluno.isdigit() is True:

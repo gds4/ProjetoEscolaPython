@@ -4,8 +4,7 @@ from datetime import date
 def valor_invalido(valor):
     print('\n')
     print(f'{valor} nao é uma opcao valida.')
-    print('Tente Novamente: ')
-    print('\n')
+    print('Tente Novamente: ', end = ' ')
 
 
 def verificar_valor(valor):
