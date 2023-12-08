@@ -6,6 +6,7 @@ import Funcoes_Gerais as FG
 import Menu
 
 
+
 sair = int(5)
 menu_inicial = None
 
