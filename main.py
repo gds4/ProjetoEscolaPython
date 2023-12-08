@@ -7,7 +7,6 @@ import Menu
 
 
 
-sair = int(5)
 menu_inicial = None
 
 while True:
